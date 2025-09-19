@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import './../styles/App.css';
 
 const App = () => {
-  cont [ count, setCount ] = useState(0)
+  const [ count, setCount ] = useState(0)
   const interval = setInterval(() => {
     count++;
   }, 1000)
@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div>
         {/* Do not remove the main div */}
-        You have been on this page for {count}
+        You've been on this page for {count} seconds.
     </div>
   )
 }
